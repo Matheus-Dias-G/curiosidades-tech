@@ -1,17 +1,22 @@
 @charset "utf-8";
+:root{
+    --gradiente-pallete: linear-gradient( 109.6deg,  rgba(24,138,141,1) 11.2%, rgba(96,221,142,1) 91.1% );
+    --green-lines:  rgb(24, 170, 32)
+}
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', Arial, sans-serif;
 }
 body{
     background-color: rgb(188, 253, 231);
 }
 header{
-    background-image: linear-gradient( 109.6deg,  rgba(24,138,141,1) 11.2%, rgba(96,221,142,1) 91.1% );
+    background-image: var(--gradiente-pallete);
 
 }
 section{
@@ -50,7 +55,7 @@ nav{
 }
 
 .external-link{
-    color: rgb(14, 172, 14);
+    color: var(--green-lines);
     font-weight: 500;
     text-decoration: underline;
 
@@ -58,7 +63,7 @@ nav{
 
 .external-link:hover{
     color: white;
-    background-image: linear-gradient( 109.6deg,  rgba(24,138,141,1) 11.2%, rgba(96,221,142,1) 91.1% );
+    background-image: var(--gradiente-pallete);
 
 }
 
@@ -84,7 +89,7 @@ menu{
 menu h1{
     font-weight: 500;
     color: rgb(0, 0, 0);
-    text-decoration: underline rgb(24, 170, 32) 4px;
+    text-decoration: underline var(--green-lines) 4px;
 }
 
 menu h2{
@@ -94,8 +99,8 @@ menu h2{
 
 menu h2::before{
     content: "i";
-    color: rgb(24, 170, 32);
-    background-color: rgb(24, 170, 32);
+    color: var(--green-lines);
+    background-color: var(--green-lines);
     margin-right: 4px;
 }
 
@@ -116,7 +121,7 @@ menu p{
 
 .list-android-version{
     margin-top:10px;
-    background-image: linear-gradient( 109.6deg,  rgba(24,138,141,1) 11.2%, rgba(96,221,142,1) 91.1% );
+    background-image: var(--gradiente-pallete);
     border-radius: 10px;
     box-shadow: 2px 2px 13px black;
     color: white;
@@ -139,7 +144,7 @@ ul li::before{
 }
 
 footer{
-    background-image: linear-gradient( 109.6deg,  rgba(24,138,141,1) 11.2%, rgba(96,221,142,1) 91.1% );
+    background-image: var(--gradiente-pallete);
     text-align: center;
     height: 33px;
     padding: 7px;
